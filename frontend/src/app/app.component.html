@@ -1,20 +1,18 @@
 <div class="text-center">
-  <table>
-  <tr id="header">
-    <td><h3>Story</h3></td>
-    <td><h3>To do</h3></td>
-    <td><h3>In progress</h3></td>
-    <td><h3>Testing</h3></td>
-    <td><h3>Done</h3></td>
-    <td><h3>Blocked</h3></td>
-  </tr>
-  <tr>
-    <td id="story"><h5>Kuba to ciubik</h5></td>
-    <td id="todo"><h5>Kuba to ciubik</h5></td>
-    <td id="inprogress"><h5>Kuba to ciubik</h5></td>
-    <td id="testing"><h5>Kuba to ciubik</h5></td>
-    <td id="done"><h5>Kuba to ciubik</h5></td>
-    <td id="blocked"><h5>Kuba to ciubik</h5></td>
-  </tr>
-  </table> 
+  <div class="row" id="header">
+    <div class="col"><h3>Story</h3></div>
+    <div class="col"><h3>To do</h3></div>
+    <div class="col"><h3>In progress</h3></div>
+    <div class="col"><h3>Testing</h3></div>
+    <div class="col"><h3>Done</h3></div>
+    <div class="col"><h3>Blocked</h3></div>
+  </div>
+  <div class="row">
+    <div class="col"> <app-story></app-story></div>
+    <div class="col"><app-todo></app-todo></div>
+    <div class="col"><app-inprogress></app-inprogress></div>
+    <div class="col"><app-testing></app-testing></div>
+    <div class="col"><app-done></app-done></div>
+    <div class="col"><app-blocked></app-blocked></div>
+  </div>
 </div>
