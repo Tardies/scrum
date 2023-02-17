@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
-import { Note } from '../note';
+import { Component, OnInit } from '@angular/core';
+import { Note } from '../noted';
+import { TodoService } from './todo.service';
 
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
-export class TodoComponent {
-  notes: Note[] = [
-    {label: "Money transfer webpage",
-    description: "Self-explanatory name of the task. Just do it, I don't care how."}
-  ]
+export class TodoComponent implements OnInit{
+  notes: Note[] = []
+  
+  constructor(private todoService: TodoService){ }
+  ngOnInit(): void {
+    this.todoService.findAll().subscribe(data => {
+      this.notes = data;
+    })
+  }
 }

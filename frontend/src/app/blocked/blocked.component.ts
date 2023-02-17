@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Note } from '../note';
+import { Note } from '../noted';
 
 @Component({
   selector: 'app-blocked',
