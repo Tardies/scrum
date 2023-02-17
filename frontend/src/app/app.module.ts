@@ -12,6 +12,9 @@ import { BlockedComponent } from './blocked/blocked.component';
 import { StoryService } from './story/story.service';
 import { TodoService } from './todo/todo.service';
 import { InprogressService } from './inprogress/inprogress.service';
+import { TestingService } from './testing/testing.service';
+import { DoneService } from './done/done.service';
+import { BlockedService } from './blocked/blocked.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,7 @@ import { InprogressService } from './inprogress/inprogress.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [StoryService, TodoService, InprogressService],
+  providers: [StoryService, TodoService, InprogressService, TestingService, DoneService, BlockedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
